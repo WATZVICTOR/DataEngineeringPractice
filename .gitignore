@@ -1,0 +1,7 @@
+*.pdf
+*storage
+clean_data
+downloads
+feature_data
+graphs
+s3_downloads
