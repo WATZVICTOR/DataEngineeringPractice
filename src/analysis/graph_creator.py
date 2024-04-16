@@ -5,7 +5,12 @@ import logging
 
 def create_graph(path : str, to_dir = "graph_dir") -> str:
     """
-    Create a graph based onrates and grouped by city/season.
+    Create a graph based on rate_price and grouped by city-season.
+    Args:
+        path : direction of the file that contains the dataset.
+        to_dir : name of the dir, which is used to save the graph.
+    Return:
+        The path of the file that contains the graph.
     """
 
     # Creamos las carpetas donde guardaremos los ficheros que vamos a limpiar.

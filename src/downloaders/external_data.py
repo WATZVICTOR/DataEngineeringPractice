@@ -8,7 +8,14 @@ from downloaders.simulator.API_Simulator import API_Simulator
 
 def download_data_from_simulator(start_date_str: str, to_dir : str = "downloads", next_x_days: int = 7, workers: int = 7) -> dict:
     """
-    Download data for the next x days from the simulator API.
+    Download data for the next x days from the API simulator.
+    Args:
+        start_date_str : YYYY-MM-DD datetime pattern used to select the desire check_in to download.
+        to_dir : name of the dir, which is used to save the data.
+        next_x_days : How many future datset do we want to download, starting from start_date_str.
+        workers : Threads pool count.
+    Return:
+        The path of the file that contains the dataset.
     """
     
     # Inicializar el diccionario para mapear las fechas descargadas a sus archivos

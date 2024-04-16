@@ -5,6 +5,12 @@ import boto3
 def download_data_from_datalake(resource_to_download : str, aws_configuration : dict, to_dir : str = "download") -> str:
     """
     Download data from S3 datalake.
+    Args:
+        resource_to_download : direction of the object located inside S3 cloud.
+        aws_configuration : Configurations which belong to the user who has access to the S3 service.
+        to_dir : name of the dir, which is used to save the data.
+    Return:
+        The path of the file that contains the dataset.
     """
     
     # Creamos las carpetas donde guardaremos los ficheros que vamos a limpiar.

@@ -1,5 +1,5 @@
-#from pyspark import pandas
-import pandas
+from pyspark import pandas
+#import pandas
 import os
 import logging
 
@@ -102,6 +102,11 @@ def __clean_entity_stars(entity_stars_data) -> pandas.Series:
 def clean_downloaded_data(path : str, to_dir : str = "cleaned_data") -> str:
     """
     Clean the downloaded file located at path.
+    Args:
+        path : direction of the file that contains the dataset.
+        to_dir : name of the dir, which is used to save the cleaned data.
+    Return:
+        The path of the file that contains the cleaned dataset.
     """
 
     # Creamos las carpetas donde guardaremos los ficheros que vamos a limpiar.

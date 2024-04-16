@@ -4,6 +4,11 @@ import boto3
 def upload_data_to_datalake(path : str, aws_configuration : dict) -> str:
     """
     Upload the file located at filepath to an S3 Instance.
+    Args:
+        path : direction of the file that contains the dataset.
+        aws_configuration : Configurations which belong to the user who has access to the S3 service.
+    Return:
+        The path of the endpoint which contains the uploadad file.
     """
 
     # Creamos un cliente de conexion para acceder a los servidores S3 de AWS.

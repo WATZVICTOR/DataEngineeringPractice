@@ -53,6 +53,11 @@ def __get_season(check_in_month_data) -> str:
 def feature_downloaded_data(path : str, to_dir : str = "featured_data") -> str:
     """
     Add features to the dataset.
+    Args:
+        path : direction of the file that contains the dataset.
+        to_dir : name of the dir, which is used to save the featured data.
+    Return:
+        The path of the file that contains the featured dataset.
     """
 
     # Creamos las carpetas donde guardaremos los ficheros que vamos a modificar.
@@ -66,7 +71,7 @@ def feature_downloaded_data(path : str, to_dir : str = "featured_data") -> str:
     data = pandas.read_csv(path, header=0)
 
     # Normalizamos los datos relativos al precio, ya que no es lo mismo 100 euros a 100 yenes
-    data["rate_price_normalized"] = minmax_scale(data['rate_price'])
+    data["rate_price_normalized"] = minmax_scale(data["rate_price"])
 
     # Factoriazmos los valores categoricos.
     data["meal_plan_factorizated"]   = __factorize_meal_plan(data["meal_plan"])
