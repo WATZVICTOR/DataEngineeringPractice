@@ -25,7 +25,7 @@ AWS_VICTOR_CONFIGURATION : dict = {
 
 PROGRAM_CONFIGURATION : dict = {
     "DATE_TO_DOWNLOAD" : "2023-07-02",
-    "NEXT_X_DAY"       : 4,
+    "NEXT_X_DAY"       : 7,
     "WORKERS"          : 7,
     "DOWNLOADS_DIR"    : "downloads",
     "CLEAN_DATA_DIR"   : "clean_data",
