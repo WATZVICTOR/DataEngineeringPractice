@@ -14,6 +14,7 @@ from analysis.graph_creator import create_graph
 
 import logging
 import os
+import time
 
 AWS_VICTOR_CONFIGURATION : dict = {
     "AWS_S3_BUCKET_NAME" : "victor-s3-aws-bucket",

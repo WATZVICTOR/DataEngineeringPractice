@@ -54,7 +54,7 @@ def download_data_from_simulator(start_date_str: str, to_dir : str = "downloads"
             downloaded_file = os.path.join(destination_dir, file)
 
             # Copiar el archivo descargado al directorio de descargas
-            shutil.copyfile(aux_pathfile, downloaded_file)
+            executor.submit(shutil.copyfile, aux_pathfile, downloaded_file)
 
             # Mapear la fecha descargada a la ruta del archivo descargado
             path_of_downloaded_files[key] = downloaded_file
