@@ -20,8 +20,8 @@ AWS_VICTOR_CONFIGURATION : dict = {
     "AWS_S3_BUCKET_NAME" : "victor-s3-aws-bucket",
     "AWS_REGION"         : "eu-south-2",
     "AWS_SERVICE"        : "s3",
-    "AWS_ACCESS_KEY"     : "AKIASZCHUEDZZQOHKFWL",
-    "AWS_SECRET_KEY"     : "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"
+    "AWS_ACCESS_KEY"     : "",
+    "AWS_SECRET_KEY"     : ""
 }
 
 PROGRAM_CONFIGURATION : dict = {
